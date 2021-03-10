@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import Context from '../context';
 const Card = ({ movie }) => {
-  const { list, setList } = useContext(Context);
+  const { list, setList } = useContext([]);
   const { id, title, year, lang, director, stars, image } = movie;
 
   const updateList = (movie) => {
